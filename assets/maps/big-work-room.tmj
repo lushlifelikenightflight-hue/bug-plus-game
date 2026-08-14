@@ -1,0 +1,507 @@
+{
+  "compressionlevel": -1,
+  "height": 768,
+  "infinite": false,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Walkable",
+      "objects": [
+        {
+          "height": 520,
+          "id": 1,
+          "name": "officeFloor",
+          "type": "walkable",
+          "width": 1948,
+          "x": 50,
+          "y": 200
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "Collision",
+      "objects": [
+        {
+          "height": 192,
+          "id": 2,
+          "name": "northWall",
+          "type": "collision",
+          "width": 2052,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "height": 768,
+          "id": 3,
+          "name": "westBoundary",
+          "type": "collision",
+          "width": 48,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "height": 768,
+          "id": 4,
+          "name": "eastBoundary",
+          "type": "collision",
+          "width": 48,
+          "x": 2000,
+          "y": 0
+        },
+        {
+          "height": 180,
+          "id": 5,
+          "name": "leftDeskAndChairs",
+          "type": "collision",
+          "width": 316,
+          "x": 305,
+          "y": 330
+        },
+        {
+          "height": 160,
+          "id": 6,
+          "name": "centerDeskAndChairs",
+          "type": "collision",
+          "width": 350,
+          "x": 844,
+          "y": 380
+        },
+        {
+          "height": 158,
+          "id": 7,
+          "name": "upperRightDeskAndChairs",
+          "type": "collision",
+          "width": 262,
+          "x": 1250,
+          "y": 155
+        },
+        {
+          "height": 164,
+          "id": 8,
+          "name": "rightDeskAndChairs",
+          "type": "collision",
+          "width": 318,
+          "x": 1230,
+          "y": 393
+        },
+        {
+          "height": 140,
+          "id": 9,
+          "name": "kitchen",
+          "type": "collision",
+          "width": 120,
+          "x": 1886,
+          "y": 283
+        },
+        {
+          "height": 98,
+          "id": 21,
+          "name": "projector",
+          "type": "collision",
+          "width": 65,
+          "x": 841,
+          "y": 222
+        },
+        {
+          "height": 137,
+          "id": 22,
+          "name": "printer",
+          "type": "collision",
+          "width": 117,
+          "x": 1092,
+          "y": 115
+        },
+        {
+          "height": 146,
+          "id": 31,
+          "name": "lowerLeftPlant",
+          "type": "collision",
+          "width": 58,
+          "x": 59,
+          "y": 537
+        },
+        {
+          "id": 34,
+          "name": "newCollision34",
+          "type": "collision",
+          "x": 1876,
+          "y": 609,
+          "width": 42,
+          "height": 110
+        },
+        {
+          "id": 35,
+          "name": "newCollision35",
+          "type": "collision",
+          "x": 1682,
+          "y": 143,
+          "width": 48,
+          "height": 122
+        },
+        {
+          "id": 36,
+          "name": "newCollision36",
+          "type": "collision",
+          "x": 1862,
+          "y": 167,
+          "width": 32,
+          "height": 70
+        },
+        {
+          "id": 37,
+          "name": "newCollision37",
+          "type": "collision",
+          "x": 56.5,
+          "y": 91,
+          "width": 59,
+          "height": 140
+        },
+        {
+          "id": 38,
+          "name": "newCollision38",
+          "type": "collision",
+          "x": 122.5,
+          "y": 91,
+          "width": 55,
+          "height": 140
+        },
+        {
+          "id": 39,
+          "name": "newCollision39",
+          "type": "collision",
+          "x": 423,
+          "y": 87,
+          "width": 142,
+          "height": 144
+        },
+        {
+          "id": 40,
+          "name": "newCollision40",
+          "type": "collision",
+          "x": 78,
+          "y": 344.5,
+          "width": 32,
+          "height": 133
+        },
+        {
+          "id": 41,
+          "name": "newCollision41",
+          "type": "collision",
+          "x": 1784,
+          "y": 584.5,
+          "width": 42,
+          "height": 131
+        },
+        {
+          "id": 42,
+          "name": "newCollision42",
+          "type": "collision",
+          "x": 1827.5,
+          "y": 347,
+          "width": 39,
+          "height": 64
+        },
+        {
+          "id": 43,
+          "name": "newCollision43",
+          "type": "collision",
+          "x": 659,
+          "y": 640.5,
+          "width": 54,
+          "height": 75
+        },
+        {
+          "id": 44,
+          "name": "newCollision44",
+          "type": "collision",
+          "x": 731,
+          "y": 642.5,
+          "width": 46,
+          "height": 67
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "SpawnPoints",
+      "objects": [
+        {
+          "height": 16,
+          "id": 13,
+          "name": "roomEntrance",
+          "type": "spawn",
+          "width": 24,
+          "x": 249,
+          "y": 275
+        },
+        {
+          "height": 40,
+          "id": 14,
+          "name": "fukushima",
+          "type": "npc",
+          "width": 34,
+          "x": 689,
+          "y": 310
+        },
+        {
+          "height": 38,
+          "id": 15,
+          "name": "oogawara",
+          "type": "npc",
+          "width": 44,
+          "x": 831,
+          "y": 661
+        },
+        {
+          "height": 40,
+          "id": 16,
+          "name": "fuyukawa",
+          "type": "npc",
+          "width": 42,
+          "x": 1641,
+          "y": 527
+        },
+        {
+          "height": 50,
+          "id": 27,
+          "name": "fukushimaPatrol",
+          "type": "npcPatrol",
+          "width": 44,
+          "x": 695,
+          "y": 580
+        },
+        {
+          "height": 34,
+          "id": 28,
+          "name": "oogawaraPatrol",
+          "type": "npcPatrol",
+          "width": 44,
+          "x": 1243,
+          "y": 676
+        },
+        {
+          "height": 50,
+          "id": 29,
+          "name": "fuyukawaPatrol",
+          "type": "npcPatrol",
+          "width": 44,
+          "x": 1853,
+          "y": 483
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "Transitions",
+      "objects": [
+        {
+          "height": 70,
+          "id": 17,
+          "name": "returnToReception",
+          "properties": [
+            {
+              "name": "targetScene",
+              "type": "string",
+              "value": "ReceptionScene"
+            },
+            {
+              "name": "targetSpawn",
+              "type": "string",
+              "value": "elevatorReturn"
+            }
+          ],
+          "type": "transition",
+          "width": 180,
+          "x": 170,
+          "y": 195
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 5,
+      "name": "Interactions",
+      "objects": [
+        {
+          "height": 110,
+          "id": 18,
+          "name": "fukushima",
+          "type": "npc",
+          "width": 120,
+          "x": 646,
+          "y": 274
+        },
+        {
+          "height": 110,
+          "id": 19,
+          "name": "oogawara",
+          "type": "npc",
+          "width": 120,
+          "x": 806,
+          "y": 617
+        },
+        {
+          "height": 110,
+          "id": 20,
+          "name": "fuyukawa",
+          "type": "npc",
+          "width": 120,
+          "x": 1596,
+          "y": 485
+        },
+        {
+          "height": 90,
+          "id": 23,
+          "name": "projector",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 876
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 216
+            }
+          ],
+          "type": "interaction",
+          "width": 150,
+          "x": 802,
+          "y": 258
+        },
+        {
+          "height": 100,
+          "id": 24,
+          "name": "printer",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 1155
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 115
+            }
+          ],
+          "type": "interaction",
+          "width": 190,
+          "x": 1052,
+          "y": 196
+        },
+        {
+          "height": 36,
+          "id": 25,
+          "name": "leftDeskPc",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 408
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 350
+            }
+          ],
+          "type": "interaction",
+          "width": 181,
+          "x": 310,
+          "y": 514
+        },
+        {
+          "height": 48,
+          "id": 26,
+          "name": "centerDeskPc",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 922
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 378
+            }
+          ],
+          "type": "interaction",
+          "width": 212,
+          "x": 828,
+          "y": 532
+        },
+        {
+          "height": 48,
+          "id": 30,
+          "name": "whiteboard",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 700
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 190
+            }
+          ],
+          "type": "interaction",
+          "width": 242,
+          "x": 713,
+          "y": 184
+        },
+        {
+          "height": 54,
+          "id": 33,
+          "name": "rightDeskPc",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 1460
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 395
+            }
+          ],
+          "type": "interaction",
+          "width": 188,
+          "x": 1374,
+          "y": 550
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    }
+  ],
+  "nextlayerid": 6,
+  "nextobjectid": 45,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.12.2",
+  "tileheight": 1,
+  "tilesets": [],
+  "tilewidth": 1,
+  "type": "map",
+  "version": "1.10",
+  "width": 2048
+}

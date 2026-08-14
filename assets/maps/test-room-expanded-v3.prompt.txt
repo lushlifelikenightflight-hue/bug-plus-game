@@ -1,0 +1,8 @@
+Built-in ImageGen edit source: test-room-expanded-v2.png
+
+Use case: precise-object-edit
+Asset type: production background PNG for a top-down 2D browser game map
+
+Remove only the selected lower desk-and-PC group, the selected lower plant, the faded upper-wall plant, and the thin vertical shadow beside the sink cabinet. Replace them with continuous matching wall and light wooden floor. Preserve the exact existing pixel-art style, top-down perspective, palette, lighting, texture scale, canvas framing, borders, windows, remaining furniture, remaining plants, and all other object positions. Add no people, UI, labels, text, or watermark. Do not crop, resize, stretch, blur, or restyle the rest of the map.
+
+The accepted runtime asset was composed non-destructively: only the four ImageGen-cleaned regions were placed over the original 2896x1086 source so unaffected pixels remain unchanged.

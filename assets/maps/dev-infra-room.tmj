@@ -1,0 +1,495 @@
+{
+  "compressionlevel": -1,
+  "height": 887,
+  "infinite": false,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Walkable",
+      "objects": [
+        {
+          "height": 655,
+          "id": 1,
+          "name": "devFloor",
+          "type": "walkable",
+          "width": 1690,
+          "x": 42,
+          "y": 182
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "Collision",
+      "objects": [
+        {
+          "height": 186,
+          "id": 2,
+          "name": "northWall",
+          "type": "collision",
+          "width": 1774,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "height": 887,
+          "id": 3,
+          "name": "westBoundary",
+          "type": "collision",
+          "width": 40,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "height": 887,
+          "id": 4,
+          "name": "eastBoundary",
+          "type": "collision",
+          "width": 40,
+          "x": 1734,
+          "y": 0
+        },
+        {
+          "height": 215,
+          "id": 5,
+          "name": "leftBookcases",
+          "type": "collision",
+          "width": 200,
+          "x": 55,
+          "y": 235
+        },
+        {
+          "height": 164,
+          "id": 6,
+          "name": "upperLeftDesksAndChairs",
+          "type": "collision",
+          "width": 430,
+          "x": 270,
+          "y": 275
+        },
+        {
+          "height": 192,
+          "id": 7,
+          "name": "serverBanks",
+          "type": "collision",
+          "width": 486,
+          "x": 1085,
+          "y": 161
+        },
+        {
+          "height": 168,
+          "id": 8,
+          "name": "lowerLeftDesksAndChairs",
+          "type": "collision",
+          "width": 434,
+          "x": 272,
+          "y": 591
+        },
+        {
+          "height": 190,
+          "id": 9,
+          "name": "lowerRightDesksAndChairs",
+          "type": "collision",
+          "width": 490,
+          "x": 915,
+          "y": 580
+        },
+        {
+          "height": 105,
+          "id": 18,
+          "name": "serverSideHvac",
+          "type": "collision",
+          "width": 105,
+          "x": 1622,
+          "y": 314
+        },
+        {
+          "height": 30,
+          "id": 27,
+          "name": "upperLeftPlant",
+          "type": "collision",
+          "width": 42,
+          "x": 407,
+          "y": 182
+        },
+        {
+          "height": 90,
+          "id": 28,
+          "name": "upperCenterPlant",
+          "type": "collision",
+          "width": 90,
+          "x": 960,
+          "y": 184
+        },
+        {
+          "height": 180,
+          "id": 29,
+          "name": "rightmostPcRack",
+          "type": "collision",
+          "width": 154,
+          "x": 1427,
+          "y": 579
+        },
+        {
+          "id": 30,
+          "name": "newCollision30",
+          "type": "collision",
+          "x": 1646,
+          "y": 681,
+          "width": 52,
+          "height": 112
+        },
+        {
+          "id": 31,
+          "name": "newCollision31",
+          "type": "collision",
+          "x": 878,
+          "y": 177,
+          "width": 32,
+          "height": 36
+        },
+        {
+          "id": 32,
+          "name": "newCollision32",
+          "type": "collision",
+          "x": 1638,
+          "y": 181,
+          "width": 34,
+          "height": 52
+        },
+        {
+          "id": 33,
+          "name": "newCollision33",
+          "type": "collision",
+          "x": 1678,
+          "y": 480.5,
+          "width": 32,
+          "height": 125
+        },
+        {
+          "id": 34,
+          "name": "newCollision34",
+          "type": "collision",
+          "x": 724.5,
+          "y": 289.5,
+          "width": 133,
+          "height": 137
+        },
+        {
+          "id": 35,
+          "name": "newCollision35",
+          "type": "collision",
+          "x": 126.5,
+          "y": 71,
+          "width": 55,
+          "height": 124
+        },
+        {
+          "id": 36,
+          "name": "newCollision36",
+          "type": "collision",
+          "x": 56.5,
+          "y": 69,
+          "width": 55,
+          "height": 124
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "SpawnPoints",
+      "objects": [
+        {
+          "height": 16,
+          "id": 10,
+          "name": "roomEntrance",
+          "type": "spawn",
+          "width": 24,
+          "x": 340,
+          "y": 212
+        },
+        {
+          "height": 34,
+          "id": 11,
+          "name": "oda",
+          "type": "npc",
+          "width": 44,
+          "x": 344,
+          "y": 533
+        },
+        {
+          "height": 38,
+          "id": 12,
+          "name": "koyama",
+          "type": "npc",
+          "width": 44,
+          "x": 1490,
+          "y": 476
+        },
+        {
+          "height": 32,
+          "id": 13,
+          "name": "odaPatrol",
+          "type": "npcPatrol",
+          "width": 38,
+          "x": 820,
+          "y": 520
+        },
+        {
+          "height": 44,
+          "id": 14,
+          "name": "koyamaPatrol",
+          "type": "npcPatrol",
+          "width": 48,
+          "x": 1288,
+          "y": 474
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "Transitions",
+      "objects": [
+        {
+          "height": 75,
+          "id": 15,
+          "name": "returnToReception",
+          "properties": [
+            {
+              "name": "targetScene",
+              "type": "string",
+              "value": "ReceptionScene"
+            },
+            {
+              "name": "targetSpawn",
+              "type": "string",
+              "value": "elevatorReturn"
+            }
+          ],
+          "type": "transition",
+          "width": 165,
+          "x": 165,
+          "y": 175
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 5,
+      "name": "Interactions",
+      "objects": [
+        {
+          "height": 120,
+          "id": 16,
+          "name": "oda",
+          "type": "npc",
+          "width": 135,
+          "x": 298,
+          "y": 487
+        },
+        {
+          "height": 120,
+          "id": 17,
+          "name": "koyama",
+          "type": "npc",
+          "width": 135,
+          "x": 1446,
+          "y": 432
+        },
+        {
+          "height": 34,
+          "id": 19,
+          "name": "devBookcase",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 150
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 225
+            }
+          ],
+          "type": "interaction",
+          "width": 190,
+          "x": 60,
+          "y": 450
+        },
+        {
+          "height": 90,
+          "id": 20,
+          "name": "upperDeskPcLeft",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 365
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 265
+            }
+          ],
+          "type": "interaction",
+          "width": 190,
+          "x": 278,
+          "y": 393
+        },
+        {
+          "height": 90,
+          "id": 21,
+          "name": "upperDeskPcRight",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 595
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 265
+            }
+          ],
+          "type": "interaction",
+          "width": 190,
+          "x": 500,
+          "y": 391
+        },
+        {
+          "height": 90,
+          "id": 22,
+          "name": "lowerLeftPcLeft",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 365
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 575
+            }
+          ],
+          "type": "interaction",
+          "width": 190,
+          "x": 278,
+          "y": 705
+        },
+        {
+          "height": 90,
+          "id": 23,
+          "name": "lowerLeftPcRight",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 595
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 575
+            }
+          ],
+          "type": "interaction",
+          "width": 190,
+          "x": 504,
+          "y": 703
+        },
+        {
+          "height": 90,
+          "id": 24,
+          "name": "lowerRightPcLeft",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 1025
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 570
+            }
+          ],
+          "type": "interaction",
+          "width": 190,
+          "x": 917,
+          "y": 710
+        },
+        {
+          "height": 90,
+          "id": 25,
+          "name": "lowerRightPcRight",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 1290
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 570
+            }
+          ],
+          "type": "interaction",
+          "width": 210,
+          "x": 1204,
+          "y": 708
+        },
+        {
+          "height": 90,
+          "id": 26,
+          "name": "serverHvac",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 1650
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 280
+            }
+          ],
+          "type": "interaction",
+          "width": 120,
+          "x": 1458,
+          "y": 297
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    }
+  ],
+  "nextlayerid": 6,
+  "nextobjectid": 37,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.12.2",
+  "tileheight": 1,
+  "tilesets": [],
+  "tilewidth": 1,
+  "type": "map",
+  "version": "1.10",
+  "width": 1774
+}

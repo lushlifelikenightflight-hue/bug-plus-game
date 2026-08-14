@@ -1,0 +1,444 @@
+{
+  "compressionlevel": -1,
+  "height": 1122,
+  "infinite": false,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Walkable",
+      "objects": [
+        {
+          "id": 1,
+          "name": "receptionFloor",
+          "polygon": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 1342,
+              "y": 0
+            },
+            {
+              "x": 1342,
+              "y": 828
+            },
+            {
+              "x": 818,
+              "y": 828
+            },
+            {
+              "x": 818,
+              "y": 852
+            },
+            {
+              "x": 524,
+              "y": 852
+            },
+            {
+              "x": 524,
+              "y": 828
+            },
+            {
+              "x": 0,
+              "y": 828
+            }
+          ],
+          "type": "walkable",
+          "x": 30,
+          "y": 270
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "Collision",
+      "objects": [
+        {
+          "height": 270,
+          "id": 2,
+          "name": "upperWalls",
+          "type": "collision",
+          "width": 1402,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "height": 1122,
+          "id": 3,
+          "name": "leftBoundary",
+          "type": "collision",
+          "width": 30,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "height": 1122,
+          "id": 4,
+          "name": "rightBoundary",
+          "type": "collision",
+          "width": 30,
+          "x": 1372,
+          "y": 0
+        },
+        {
+          "height": 190,
+          "id": 5,
+          "name": "receptionCounterBody",
+          "type": "collision",
+          "width": 442,
+          "x": 490,
+          "y": 315
+        },
+        {
+          "id": 6,
+          "name": "rightWaitingFurniture",
+          "polygon": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 154,
+              "y": 0
+            },
+            {
+              "x": 154,
+              "y": 763
+            },
+            {
+              "x": 0,
+              "y": 763
+            },
+            {
+              "x": 0,
+              "y": 485
+            },
+            {
+              "x": 30,
+              "y": 485
+            },
+            {
+              "x": 30,
+              "y": 280
+            },
+            {
+              "x": 0,
+              "y": 280
+            }
+          ],
+          "type": "collision",
+          "x": 1218,
+          "y": 335
+        },
+        {
+          "id": 7,
+          "name": "bottomLeftFurniture",
+          "polygon": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 108.67500000000013,
+              "y": 0
+            },
+            {
+              "x": 108.67500000000013,
+              "y": 70
+            },
+            {
+              "x": 378,
+              "y": 70
+            },
+            {
+              "x": 378,
+              "y": 198
+            },
+            {
+              "x": 0,
+              "y": 198
+            }
+          ],
+          "type": "collision",
+          "x": 90,
+          "y": 898
+        },
+        {
+          "height": 128,
+          "id": 8,
+          "name": "bottomRightFurniture",
+          "type": "collision",
+          "width": 255,
+          "x": 925,
+          "y": 970
+        },
+        {
+          "height": 65,
+          "id": 9,
+          "name": "upperRightPlant",
+          "type": "collision",
+          "width": 115,
+          "x": 1215,
+          "y": 270
+        },
+        {
+          "height": 24,
+          "id": 10,
+          "name": "bottomLeftBoundary",
+          "type": "collision",
+          "width": 554,
+          "x": 0,
+          "y": 1098
+        },
+        {
+          "height": 24,
+          "id": 11,
+          "name": "bottomRightBoundary",
+          "type": "collision",
+          "width": 554,
+          "x": 848,
+          "y": 1098
+        },
+        {
+          "id": 24,
+          "name": "newCollision24",
+          "type": "collision",
+          "x": 510,
+          "y": 25,
+          "width": 386,
+          "height": 258
+        },
+        {
+          "id": 25,
+          "name": "newCollision25",
+          "type": "collision",
+          "x": 389.5,
+          "y": 178,
+          "width": 57,
+          "height": 112
+        },
+        {
+          "id": 26,
+          "name": "newCollision26",
+          "type": "collision",
+          "x": 62,
+          "y": 623.5,
+          "width": 50,
+          "height": 193
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "SpawnPoints",
+      "objects": [
+        {
+          "height": 16,
+          "id": 12,
+          "name": "companyFrontEntrance",
+          "type": "spawn",
+          "width": 24,
+          "x": 689,
+          "y": 990
+        },
+        {
+          "height": 16,
+          "id": 17,
+          "name": "tamuraEntry",
+          "type": "spawn",
+          "width": 24,
+          "x": 1113,
+          "y": 292
+        },
+        {
+          "height": 16,
+          "id": 18,
+          "name": "tamuraTalkPosition",
+          "type": "spawn",
+          "width": 24,
+          "x": 689,
+          "y": 822
+        },
+        {
+          "height": 16,
+          "id": 19,
+          "name": "tamuraExit",
+          "type": "spawn",
+          "width": 24,
+          "x": 1113,
+          "y": 292
+        },
+        {
+          "height": 16,
+          "id": 20,
+          "name": "elevatorReturn",
+          "type": "spawn",
+          "width": 24,
+          "x": 180,
+          "y": 390
+        },
+        {
+          "height": 16,
+          "id": 21,
+          "name": "interviewReturn",
+          "type": "spawn",
+          "width": 24,
+          "x": 1110,
+          "y": 390
+        },
+        {
+          "height": 16,
+          "id": 22,
+          "name": "elevatorQa",
+          "type": "spawn",
+          "width": 24,
+          "x": 180,
+          "y": 320
+        },
+        {
+          "height": 16,
+          "id": 23,
+          "name": "interviewQa",
+          "type": "spawn",
+          "width": 24,
+          "x": 1110,
+          "y": 310
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "Transitions",
+      "objects": [
+        {
+          "height": 94,
+          "id": 13,
+          "name": "companyFrontExit",
+          "properties": [
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "company-front"
+            },
+            {
+              "name": "targetSpawn",
+              "type": "string",
+              "value": "receptionReturn"
+            }
+          ],
+          "type": "transition",
+          "width": 286,
+          "x": 556,
+          "y": 1040
+        },
+        {
+          "height": 95,
+          "id": 14,
+          "name": "floorElevator",
+          "properties": [
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "elevator-menu"
+            }
+          ],
+          "type": "transition",
+          "width": 220,
+          "x": 70,
+          "y": 270
+        },
+        {
+          "height": 95,
+          "id": 15,
+          "name": "workRoomDoor",
+          "properties": [
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "work-room"
+            }
+          ],
+          "type": "transition",
+          "width": 165,
+          "x": 1045,
+          "y": 270
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 5,
+      "name": "Interactions",
+      "objects": [
+        {
+          "height": 105,
+          "id": 16,
+          "name": "receptionCounter",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 790
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 345
+            }
+          ],
+          "type": "interaction",
+          "width": 252,
+          "x": 680,
+          "y": 505
+        },
+        {
+          "id": 27,
+          "name": "receptionLeftPc",
+          "type": "interaction",
+          "x": 492,
+          "y": 259,
+          "width": 158,
+          "height": 117,
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 600
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 480
+            }
+          ]
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    }
+  ],
+  "nextlayerid": 6,
+  "nextobjectid": 28,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.12.2",
+  "tileheight": 1,
+  "tilesets": [],
+  "tilewidth": 1,
+  "type": "map",
+  "version": "1.10",
+  "width": 1402
+}

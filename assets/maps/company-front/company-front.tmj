@@ -1,0 +1,322 @@
+{
+  "compressionlevel": -1,
+  "height": 1086,
+  "infinite": false,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Walkable",
+      "objects": [
+        {
+          "id": 1,
+          "name": "companySidewalk",
+          "polygon": [
+            {
+              "x": 0,
+              "y": 20
+            },
+            {
+              "x": 520,
+              "y": 20
+            },
+            {
+              "x": 520,
+              "y": 0
+            },
+            {
+              "x": 930,
+              "y": 0
+            },
+            {
+              "x": 930,
+              "y": 20
+            },
+            {
+              "x": 1448,
+              "y": 20
+            },
+            {
+              "x": 1448,
+              "y": 300
+            },
+            {
+              "x": 0,
+              "y": 300
+            }
+          ],
+          "type": "walkable",
+          "x": 0,
+          "y": 500
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "Collision",
+      "objects": [
+        {
+          "id": 2,
+          "name": "buildingAndStores",
+          "type": "collision",
+          "x": 0,
+          "y": 0,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 1448,
+              "y": 0
+            },
+            {
+              "x": 1448,
+              "y": 520
+            },
+            {
+              "x": 930,
+              "y": 520
+            },
+            {
+              "x": 930,
+              "y": 500
+            },
+            {
+              "x": 520,
+              "y": 500
+            },
+            {
+              "x": 520,
+              "y": 520
+            },
+            {
+              "x": 0,
+              "y": 520
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "road",
+          "type": "collision",
+          "x": 0,
+          "y": 800,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 1448,
+              "y": 0
+            },
+            {
+              "x": 1448,
+              "y": 286
+            },
+            {
+              "x": 0,
+              "y": 286
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "name": "entranceBollard",
+          "type": "collision",
+          "x": 489,
+          "y": 480,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 42,
+              "y": 0
+            },
+            {
+              "x": 42,
+              "y": 98
+            },
+            {
+              "x": 0,
+              "y": 98
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "rightPlanter",
+          "type": "collision",
+          "x": 1215,
+          "y": 514,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 94,
+              "y": 0
+            },
+            {
+              "x": 94,
+              "y": 96
+            },
+            {
+              "x": 0,
+              "y": 96
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "name": "leftPlanters",
+          "type": "collision",
+          "x": 138,
+          "y": 460,
+          "polygon": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 205,
+              "y": 0
+            },
+            {
+              "x": 205,
+              "y": 28
+            },
+            {
+              "x": 0,
+              "y": 28
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "name": "newCollision14",
+          "type": "collision",
+          "x": 98,
+          "y": 553,
+          "width": 60,
+          "height": 80
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "SpawnPoints",
+      "objects": [
+        {
+          "height": 16,
+          "id": 8,
+          "name": "companyEntrance",
+          "type": "spawn",
+          "width": 24,
+          "x": 698,
+          "y": 670
+        },
+        {
+          "height": 16,
+          "id": 10,
+          "name": "receptionReturn",
+          "type": "spawn",
+          "width": 24,
+          "x": 698,
+          "y": 630
+        },
+        {
+          "height": 16,
+          "id": 11,
+          "name": "presidentReturn",
+          "type": "spawn",
+          "width": 24,
+          "x": 400,
+          "y": 650
+        },
+        {
+          "height": 16,
+          "id": 13,
+          "name": "presidentQa",
+          "type": "spawn",
+          "width": 24,
+          "x": 400,
+          "y": 540
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "Transitions",
+      "objects": [
+        {
+          "height": 90,
+          "id": 9,
+          "name": "receptionEntrance",
+          "properties": [
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "reception"
+            }
+          ],
+          "type": "transition",
+          "width": 236,
+          "x": 582,
+          "y": 505
+        },
+        {
+          "height": 105,
+          "id": 12,
+          "name": "presidentStairs",
+          "properties": [
+            {
+              "name": "targetMap",
+              "type": "string",
+              "value": "president-room"
+            }
+          ],
+          "type": "transition",
+          "width": 130,
+          "x": 353,
+          "y": 451
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "draworder": "topdown",
+      "id": 5,
+      "name": "Interactions",
+      "objects": [],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    }
+  ],
+  "nextlayerid": 6,
+  "nextobjectid": 15,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.12.2",
+  "tileheight": 1,
+  "tilesets": [],
+  "tilewidth": 1,
+  "type": "map",
+  "version": "1.10",
+  "width": 1448
+}

@@ -1,0 +1,307 @@
+{
+  "compressionlevel": -1,
+  "height": 1086,
+  "infinite": false,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Walkable",
+      "objects": [
+        {
+          "height": 768,
+          "id": 1,
+          "name": "meetingFloor",
+          "type": "walkable",
+          "width": 847,
+          "x": 260,
+          "y": 262
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "Collision",
+      "objects": [
+        {
+          "height": 260,
+          "id": 2,
+          "name": "northWall",
+          "type": "collision",
+          "width": 1448,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "height": 1086,
+          "id": 3,
+          "name": "westBoundary",
+          "type": "collision",
+          "width": 252,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "height": 1086,
+          "id": 4,
+          "name": "eastBoundary",
+          "type": "collision",
+          "width": 311,
+          "x": 1107,
+          "y": 6
+        },
+        {
+          "height": 270,
+          "id": 5,
+          "name": "meetingTable",
+          "type": "collision",
+          "width": 445,
+          "x": 497,
+          "y": 445
+        },
+        {
+          "height": 120,
+          "id": 6,
+          "name": "northChairs",
+          "type": "collision",
+          "width": 124,
+          "x": 562,
+          "y": 324
+        },
+        {
+          "height": 157,
+          "id": 15,
+          "name": "meetingRoomPlant",
+          "type": "collision",
+          "width": 82,
+          "x": 282,
+          "y": 262
+        },
+        {
+          "height": 150,
+          "id": 16,
+          "name": "westChair",
+          "type": "collision",
+          "width": 67,
+          "x": 432,
+          "y": 502
+        },
+        {
+          "height": 150,
+          "id": 17,
+          "name": "eastChair",
+          "type": "collision",
+          "width": 75,
+          "x": 946,
+          "y": 496
+        },
+        {
+          "height": 130,
+          "id": 18,
+          "name": "southChairs",
+          "type": "collision",
+          "width": 108,
+          "x": 570,
+          "y": 679
+        },
+        {
+          "id": 19,
+          "name": "newCollision19",
+          "type": "collision",
+          "x": 768,
+          "y": 331,
+          "width": 92,
+          "height": 116
+        },
+        {
+          "id": 20,
+          "name": "newCollision20",
+          "type": "collision",
+          "x": 770,
+          "y": 681,
+          "width": 94,
+          "height": 124
+        },
+        {
+          "id": 21,
+          "name": "newCollision21",
+          "type": "collision",
+          "x": 994,
+          "y": 105,
+          "width": 136,
+          "height": 242
+        },
+        {
+          "id": 22,
+          "name": "newCollision22",
+          "type": "collision",
+          "x": 190,
+          "y": 777,
+          "width": 98,
+          "height": 204
+        },
+        {
+          "id": 23,
+          "name": "newCollision23",
+          "type": "collision",
+          "x": 444,
+          "y": 977,
+          "width": 730,
+          "height": 68
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 3,
+      "name": "SpawnPoints",
+      "objects": [
+        {
+          "height": 16,
+          "id": 7,
+          "name": "roomEntrance",
+          "type": "spawn",
+          "width": 24,
+          "x": 356,
+          "y": 890
+        },
+        {
+          "height": 40,
+          "id": 8,
+          "name": "oozeki",
+          "type": "npc",
+          "width": 42,
+          "x": 780,
+          "y": 826
+        },
+        {
+          "height": 46,
+          "id": 9,
+          "name": "oozekiPatrol",
+          "type": "npcPatrol",
+          "width": 48,
+          "x": 1036,
+          "y": 822
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 4,
+      "name": "Transitions",
+      "objects": [
+        {
+          "height": 146,
+          "id": 10,
+          "name": "returnToReception",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 340
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 1260
+            },
+            {
+              "name": "targetScene",
+              "type": "string",
+              "value": "ReceptionScene"
+            },
+            {
+              "name": "targetSpawn",
+              "type": "string",
+              "value": "interviewReturn"
+            }
+          ],
+          "type": "transition",
+          "width": 278,
+          "x": 263,
+          "y": 929
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    },
+    {
+      "id": 5,
+      "name": "Interactions",
+      "objects": [
+        {
+          "height": 120,
+          "id": 11,
+          "name": "oozeki",
+          "type": "npc",
+          "width": 135,
+          "x": 728,
+          "y": 782
+        },
+        {
+          "height": 144,
+          "id": 13,
+          "name": "conferencePc",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 720
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 485
+            }
+          ],
+          "type": "interaction",
+          "width": 80,
+          "x": 684,
+          "y": 715
+        },
+        {
+          "height": 120,
+          "id": 14,
+          "name": "conferenceDocuments",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 840
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 520
+            }
+          ],
+          "type": "interaction",
+          "width": 100,
+          "x": 878,
+          "y": 398
+        }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true
+    }
+  ],
+  "nextlayerid": 6,
+  "nextobjectid": 24,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.12.2",
+  "tileheight": 1,
+  "tilesets": [],
+  "tilewidth": 1,
+  "type": "map",
+  "version": "1.10",
+  "width": 1448
+}
