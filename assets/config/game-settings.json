@@ -1,5 +1,6 @@
 {
   "version": 1,
   "dayDurationMinutes": 15,
-  "userScreenLock": "day1"
+  "userScreenLock": "day1",
+  "continuationScoreThreshold": 100000
 }
