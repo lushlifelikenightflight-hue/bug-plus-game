@@ -423,6 +423,27 @@
               "value": 480
             }
           ]
+        },
+        {
+          "height": 70,
+          "id": 28,
+          "name": "lowerRightPlant",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 1270
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 940
+            }
+          ],
+          "type": "interaction",
+          "width": 38,
+          "x": 1180,
+          "y": 880
         }
       ],
       "opacity": 1,
@@ -431,7 +452,7 @@
     }
   ],
   "nextlayerid": 6,
-  "nextobjectid": 28,
+  "nextobjectid": 29,
   "orientation": "orthogonal",
   "renderorder": "right-down",
   "tiledversion": "1.12.2",
