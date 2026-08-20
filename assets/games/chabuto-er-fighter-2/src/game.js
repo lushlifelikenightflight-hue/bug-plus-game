@@ -2818,9 +2818,6 @@ export class Game {
     this.state.finalStats = finalStats;
     const eyesBonus = this.state.mode === "arcade" && this.state.difficulty === "hard" && this.state.stage >= 5;
     this.state.eyesBonusPage = eyesBonus ? 0 : 2;
-    if (eyesBonus && typeof window !== "undefined" && window.parent !== window) {
-      window.parent.postMessage({ type: "bug-plus:fighter-hard-clear", stage: this.state.stage, difficulty: this.state.difficulty }, "*");
-    }
     this.save = appendHighScore(this.save, {
       score: this.state.score,
       rank,
@@ -2830,6 +2827,11 @@ export class Game {
       durationMs: finalStats.durationMs,
     });
     this.setScreen(SCREEN.score);
+    if (eyesBonus && typeof window !== "undefined" && window.parent !== window) {
+      const message = { type: "bug-plus:fighter-hard-clear", stage: this.state.stage, difficulty: this.state.difficulty };
+      window.parent.postMessage(message, "*");
+      window.setTimeout(() => window.parent.postMessage(message, "*"), 120);
+    }
   }
 
   returnTitle() {
