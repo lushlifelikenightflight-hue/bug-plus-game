@@ -282,3 +282,4 @@ html.game-active, body.game-active {
 #game.game-viewport-lock:has(.virtual-pad[data-orientation="landscape"]) .character-grid button { height: min(20dvh, 84px); min-height: 0 !important; }
 #game.game-viewport-lock:has(.virtual-pad[data-orientation="landscape"]) .virtual-pad-slot,
 #game.game-viewport-lock:has(.virtual-pad[data-orientation="landscape"]) .virtual-pad { display: none !important; }
+.eyes-world-bonus{display:grid;gap:10px;margin:12px 0;padding:16px;border:2px solid #826dff;background:linear-gradient(135deg,#050713,#111632 55%,#27144a);box-shadow:inset 0 0 24px #5a48ff33,0 0 18px #4d3dff55;color:#edf7ff;text-align:center}.eyes-world-bonus strong{color:#aee8ff;font-size:clamp(16px,3vw,24px);text-shadow:0 0 10px #55aaff}.eyes-world-bonus p{margin:0;line-height:1.7}.eyes-world-bonus button{justify-self:center;min-width:180px}

@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title desc">
+<title id="title">月影温泉街 全体迷路地図</title><desc id="desc">ゲーム実装の正本データから生成した、4階層、3つの階段、2つの橋を持つ温泉街の俯瞰図。</desc>
+<defs><filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-opacity=".55"/></filter><pattern id="stone" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#171616"/><path d="M0 8h16M8 0v8M4 8v8M12 8v8" stroke="#27211d" stroke-width="1"/></pattern></defs>
+<rect width="1600" height="720" fill="#090b0e"/><rect x="42" y="42" width="1360" height="610" rx="12" fill="url(#stone)" stroke="#8d663c"/>
+<text x="70" y="36" class="title">月影温泉街　全体迷路地図</text><text x="835" y="36" class="subtitle">道路・建物・衝突・敵配置の共通ソース</text>
+<rect x="671.8" y="37.4" width="43.5" height="586.8" fill="#153956" opacity=".92"/>
+<g filter="url(#shadow)"><line x1="70.0" y1="330.8" x2="215.0" y2="330.8" stroke="#71513d" stroke-width="45.4" class="road"><title>start-lane / start</title></line>
+<line x1="215.0" y1="330.8" x2="215.0" y2="200.4" stroke="#71513d" stroke-width="41.2" class="road"><title>west-north-entry / loop</title></line>
+<line x1="215.0" y1="330.8" x2="215.0" y2="461.2" stroke="#71513d" stroke-width="41.2" class="road"><title>west-south-entry / loop</title></line>
+<line x1="215.0" y1="461.2" x2="345.5" y2="461.2" stroke="#71513d" stroke-width="41.2" class="road"><title>west-south-lane / loop</title></line>
+<line x1="345.5" y1="461.2" x2="345.5" y2="200.4" stroke="#71513d" stroke-width="41.2" class="road"><title>west-spine / route</title></line>
+<line x1="215.0" y1="200.4" x2="345.5" y2="200.4" stroke="#71513d" stroke-width="41.2" class="road"><title>west-north-lane / loop</title></line>
+<line x1="215.0" y1="461.2" x2="120.8" y2="461.2" stroke="#71513d" stroke-width="36.9" class="road"><title>company-alley / dead-end</title></line>
+<line x1="345.5" y1="461.2" x2="447.0" y2="461.2" stroke="#71513d" stroke-width="36.9" class="road"><title>old-bath-alley / dead-end</title></line>
+<line x1="345.5" y1="200.4" x2="476.0" y2="200.4" stroke="#71513d" stroke-width="41.2" class="road"><title>pilgrim-lane / route</title></line>
+<line x1="476.0" y1="200.4" x2="476.0" y2="102.6" stroke="#71513d" stroke-width="41.2" class="road"><title>stone-step-approach / route</title></line>
+<line x1="476.0" y1="102.6" x2="534.0" y2="102.6" stroke="#71513d" stroke-width="36.9" stroke-dasharray="8 6" class="road"><title>stairs-ground-mezzanine / route</title></line>
+<line x1="534.0" y1="102.6" x2="621.0" y2="102.6" stroke="#9a6339" stroke-width="41.2" class="road"><title>mezzanine-roof-street / route</title></line>
+<line x1="621.0" y1="102.6" x2="621.0" y2="200.4" stroke="#9a6339" stroke-width="41.2" class="road"><title>mezzanine-descent / route</title></line>
+<line x1="621.0" y1="200.4" x2="766.0" y2="200.4" stroke="#d7ad68" stroke-width="41.2" class="road"><title>northern-river-bridge / route</title></line>
+<line x1="766.0" y1="200.4" x2="766.0" y2="461.2" stroke="#9a6339" stroke-width="41.2" class="road"><title>canal-east-spine / route</title></line>
+<line x1="766.0" y1="461.2" x2="896.5" y2="461.2" stroke="#9a6339" stroke-width="41.2" class="road"><title>southern-inn-lane / route</title></line>
+<line x1="896.5" y1="461.2" x2="896.5" y2="330.8" stroke="#9a6339" stroke-width="41.2" class="road"><title>bathhouse-return / route</title></line>
+<line x1="766.0" y1="330.8" x2="896.5" y2="330.8" stroke="#9a6339" stroke-width="41.2" class="road"><title>central-loop-east / loop</title></line>
+<line x1="621.0" y1="330.8" x2="766.0" y2="330.8" stroke="#d7ad68" stroke-width="41.2" class="road"><title>central-river-bridge / route</title></line>
+<line x1="621.0" y1="200.4" x2="621.0" y2="330.8" stroke="#9a6339" stroke-width="41.2" class="road"><title>central-loop-west / loop</title></line>
+<line x1="766.0" y1="461.2" x2="766.0" y2="559.0" stroke="#9a6339" stroke-width="36.9" class="road"><title>steam-dead-end / dead-end</title></line>
+<line x1="896.5" y1="461.2" x2="896.5" y2="559.0" stroke="#9a6339" stroke-width="36.9" class="road"><title>laundry-dead-end / dead-end</title></line>
+<line x1="896.5" y1="330.8" x2="954.5" y2="330.8" stroke="#9a6339" stroke-width="36.9" stroke-dasharray="8 6" class="road"><title>stairs-mezzanine-second / route</title></line>
+<line x1="954.5" y1="330.8" x2="954.5" y2="461.2" stroke="#b5783d" stroke-width="41.2" class="road"><title>second-floor-south-entry / loop</title></line>
+<line x1="954.5" y1="330.8" x2="954.5" y2="200.4" stroke="#b5783d" stroke-width="41.2" class="road"><title>second-floor-north-entry / loop</title></line>
+<line x1="954.5" y1="461.2" x2="1085.0" y2="461.2" stroke="#b5783d" stroke-width="41.2" class="road"><title>second-floor-south-lane / loop</title></line>
+<line x1="1085.0" y1="461.2" x2="1085.0" y2="102.6" stroke="#b5783d" stroke-width="41.2" class="road"><title>second-floor-east-spine / route</title></line>
+<line x1="954.5" y1="200.4" x2="1085.0" y2="200.4" stroke="#b5783d" stroke-width="41.2" class="road"><title>second-floor-north-lane / loop</title></line>
+<line x1="954.5" y1="200.4" x2="954.5" y2="102.6" stroke="#b5783d" stroke-width="36.9" class="road"><title>shrine-dead-end / dead-end</title></line>
+<line x1="1085.0" y1="461.2" x2="1085.0" y2="559.0" stroke="#b5783d" stroke-width="36.9" class="road"><title>warehouse-dead-end / dead-end</title></line>
+<line x1="1085.0" y1="102.6" x2="1157.5" y2="102.6" stroke="#b5783d" stroke-width="36.9" stroke-dasharray="8 6" class="road"><title>stairs-second-upper / route</title></line>
+<line x1="1157.5" y1="102.6" x2="1288.0" y2="102.6" stroke="#df9c48" stroke-width="41.2" class="road"><title>upper-moon-lane / route</title></line>
+<line x1="1288.0" y1="102.6" x2="1288.0" y2="200.4" stroke="#df9c48" stroke-width="41.2" class="road"><title>upper-east-descent / route</title></line>
+<line x1="1288.0" y1="200.4" x2="1172.0" y2="200.4" stroke="#df9c48" stroke-width="41.2" class="road"><title>upper-return-lane / route</title></line>
+<line x1="1172.0" y1="200.4" x2="1172.0" y2="330.8" stroke="#df9c48" stroke-width="41.2" class="road"><title>upper-goal-descent / route</title></line>
+<line x1="1172.0" y1="330.8" x2="1288.0" y2="330.8" stroke="#df9c48" stroke-width="44.0" class="road"><title>goal-lane / goal</title></line>
+<line x1="1172.0" y1="330.8" x2="1172.0" y2="461.2" stroke="#df9c48" stroke-width="36.9" class="road"><title>forgotten-office-alley / dead-end</title></line>
+<line x1="1172.0" y1="461.2" x2="1273.5" y2="461.2" stroke="#df9c48" stroke-width="36.9" class="road"><title>forgotten-office-end / dead-end</title></line></g><g><line x1="70.0" y1="330.8" x2="215.0" y2="330.8" class="center start"/>
+<line x1="215.0" y1="330.8" x2="215.0" y2="200.4" class="center loop"/>
+<line x1="215.0" y1="330.8" x2="215.0" y2="461.2" class="center loop"/>
+<line x1="215.0" y1="461.2" x2="345.5" y2="461.2" class="center loop"/>
+<line x1="345.5" y1="461.2" x2="345.5" y2="200.4" class="center route"/>
+<line x1="215.0" y1="200.4" x2="345.5" y2="200.4" class="center loop"/>
+<line x1="215.0" y1="461.2" x2="120.8" y2="461.2" class="center dead-end"/>
+<line x1="345.5" y1="461.2" x2="447.0" y2="461.2" class="center dead-end"/>
+<line x1="345.5" y1="200.4" x2="476.0" y2="200.4" class="center route"/>
+<line x1="476.0" y1="200.4" x2="476.0" y2="102.6" class="center route"/>
+<line x1="476.0" y1="102.6" x2="534.0" y2="102.6" class="center route"/>
+<line x1="534.0" y1="102.6" x2="621.0" y2="102.6" class="center route"/>
+<line x1="621.0" y1="102.6" x2="621.0" y2="200.4" class="center route"/>
+<line x1="621.0" y1="200.4" x2="766.0" y2="200.4" class="center route"/>
+<line x1="766.0" y1="200.4" x2="766.0" y2="461.2" class="center route"/>
+<line x1="766.0" y1="461.2" x2="896.5" y2="461.2" class="center route"/>
+<line x1="896.5" y1="461.2" x2="896.5" y2="330.8" class="center route"/>
+<line x1="766.0" y1="330.8" x2="896.5" y2="330.8" class="center loop"/>
+<line x1="621.0" y1="330.8" x2="766.0" y2="330.8" class="center route"/>
+<line x1="621.0" y1="200.4" x2="621.0" y2="330.8" class="center loop"/>
+<line x1="766.0" y1="461.2" x2="766.0" y2="559.0" class="center dead-end"/>
+<line x1="896.5" y1="461.2" x2="896.5" y2="559.0" class="center dead-end"/>
+<line x1="896.5" y1="330.8" x2="954.5" y2="330.8" class="center route"/>
+<line x1="954.5" y1="330.8" x2="954.5" y2="461.2" class="center loop"/>
+<line x1="954.5" y1="330.8" x2="954.5" y2="200.4" class="center loop"/>
+<line x1="954.5" y1="461.2" x2="1085.0" y2="461.2" class="center loop"/>
+<line x1="1085.0" y1="461.2" x2="1085.0" y2="102.6" class="center route"/>
+<line x1="954.5" y1="200.4" x2="1085.0" y2="200.4" class="center loop"/>
+<line x1="954.5" y1="200.4" x2="954.5" y2="102.6" class="center dead-end"/>
+<line x1="1085.0" y1="461.2" x2="1085.0" y2="559.0" class="center dead-end"/>
+<line x1="1085.0" y1="102.6" x2="1157.5" y2="102.6" class="center route"/>
+<line x1="1157.5" y1="102.6" x2="1288.0" y2="102.6" class="center route"/>
+<line x1="1288.0" y1="102.6" x2="1288.0" y2="200.4" class="center route"/>
+<line x1="1288.0" y1="200.4" x2="1172.0" y2="200.4" class="center route"/>
+<line x1="1172.0" y1="200.4" x2="1172.0" y2="330.8" class="center route"/>
+<line x1="1172.0" y1="330.8" x2="1288.0" y2="330.8" class="center goal"/>
+<line x1="1172.0" y1="330.8" x2="1172.0" y2="461.2" class="center dead-end"/>
+<line x1="1172.0" y1="461.2" x2="1273.5" y2="461.2" class="center dead-end"/></g><g><rect x="79.4" y="506.0" width="68.2" height="57.1" rx="4" class="building level-0"><title>lot-1</title></rect>
+<rect x="154.1" y="503.6" width="63.8" height="61.9" rx="4" class="building level-0"><title>lot-2</title></rect>
+<rect x="226.6" y="506.0" width="63.8" height="57.1" rx="4" class="building level-0"><title>lot-3</title></rect>
+<rect x="296.9" y="503.6" width="68.2" height="61.9" rx="4" class="building level-0"><title>lot-4</title></rect>
+<rect x="371.6" y="506.0" width="63.8" height="57.1" rx="4" class="building level-0"><title>lot-5</title></rect>
+<rect x="444.1" y="503.6" width="63.8" height="61.9" rx="4" class="building level-0"><title>lot-6</title></rect>
+<rect x="514.4" y="506.0" width="68.2" height="57.1" rx="4" class="building level-0"><title>lot-7</title></rect>
+<rect x="589.1" y="503.6" width="63.8" height="61.9" rx="4" class="building level-1"><title>lot-8</title></rect>
+<rect x="661.6" y="506.0" width="63.8" height="57.1" rx="4" class="building level-1"><title>lot-9</title></rect>
+<rect x="806.6" y="506.0" width="63.8" height="57.1" rx="4" class="building level-1"><title>lot-10</title></rect>
+<rect x="949.4" y="506.0" width="68.2" height="57.1" rx="4" class="building level-2"><title>lot-11</title></rect>
+<rect x="1166.9" y="503.6" width="68.2" height="61.9" rx="4" class="building level-3"><title>lot-12</title></rect>
+<rect x="1241.6" y="506.0" width="63.8" height="57.1" rx="4" class="building level-3"><title>lot-13</title></rect>
+<rect x="444.1" y="375.6" width="63.8" height="57.1" rx="4" class="building level-0"><title>lot-14</title></rect>
+<rect x="516.6" y="373.2" width="63.8" height="61.9" rx="4" class="building level-1"><title>lot-15</title></rect>
+<rect x="586.9" y="375.6" width="68.2" height="57.1" rx="4" class="building level-1"><title>lot-16</title></rect>
+<rect x="661.6" y="373.2" width="63.8" height="61.9" rx="4" class="building level-1"><title>lot-17</title></rect>
+<rect x="81.6" y="228.9" width="63.8" height="57.1" rx="4" class="building level-0"><title>lot-18</title></rect>
+<rect x="516.6" y="228.9" width="63.8" height="57.1" rx="4" class="building level-1"><title>lot-19</title></rect>
+<rect x="806.6" y="228.9" width="63.8" height="57.1" rx="4" class="building level-1"><title>lot-20</title></rect>
+<rect x="79.4" y="96.1" width="68.2" height="61.9" rx="4" class="building level-0"><title>lot-21</title></rect>
+<rect x="154.1" y="98.5" width="63.8" height="57.1" rx="4" class="building level-0"><title>lot-22</title></rect>
+<rect x="226.6" y="96.1" width="63.8" height="61.9" rx="4" class="building level-0"><title>lot-23</title></rect>
+<rect x="296.9" y="98.5" width="68.2" height="57.1" rx="4" class="building level-0"><title>lot-24</title></rect>
+<rect x="371.6" y="96.1" width="63.8" height="61.9" rx="4" class="building level-0"><title>lot-25</title></rect>
+<rect x="661.6" y="96.1" width="63.8" height="61.9" rx="4" class="building level-1"><title>lot-26</title></rect>
+<rect x="731.9" y="98.5" width="68.2" height="57.1" rx="4" class="building level-1"><title>lot-27</title></rect>
+<rect x="806.6" y="96.1" width="63.8" height="61.9" rx="4" class="building level-1"><title>lot-28</title></rect>
+<rect x="241.8" y="294.1" width="76.8" height="73.4" rx="4" class="building level-0"><title>sight-wall-west</title></rect>
+<rect x="441.9" y="292.5" width="97.2" height="76.6" rx="4" class="building level-1"><title>sight-wall-central</title></rect>
+<rect x="992.9" y="293.3" width="68.2" height="75.0" rx="4" class="building level-2"><title>sight-wall-east</title></rect>
+<rect x="1110.4" y="293.3" width="36.3" height="75.0" rx="4" class="building level-3"><title>sight-wall-upper</title></rect></g>
+<circle cx="83.04999999999998" cy="327.54" r="13" fill="#58c66d" stroke="#e9ffe9" stroke-width="4"/><text x="101.04999999999998" y="311.54" class="marker">START</text>
+<line x1="152.64999999999998" y1="305.8" x2="152.64999999999998" y2="355.8" stroke="#e9d091" stroke-width="5"/><text x="132.64999999999998" y="298.8" class="small">開始門</text>
+<circle cx="1288" cy="330.8" r="13" fill="#c33b36" stroke="#fff1dd" stroke-width="4"/><text x="1230" y="312.8" class="marker">GOAL</text>
+<g transform="translate(1430 86)"><rect width="145" height="430" rx="10" fill="#111318" stroke="#8d663c"/><text x="16" y="34" class="legend-title">凡例</text><line x1="16" y1="76" x2="58" y2="76" stroke="#71513d" stroke-width="18"/><text x="68" y="82" class="legend">地上 0m</text><line x1="16" y1="124" x2="58" y2="124" stroke="#9a6339" stroke-width="18"/><text x="68" y="130" class="legend">中2階 2.2m</text><line x1="16" y1="172" x2="58" y2="172" stroke="#b5783d" stroke-width="18"/><text x="68" y="178" class="legend">2階 4.4m</text><line x1="16" y1="220" x2="58" y2="220" stroke="#df9c48" stroke-width="18"/><text x="68" y="226" class="legend">中3階 6.6m</text><line x1="16" y1="282" x2="58" y2="282" stroke="#d7ad68" stroke-width="18"/><text x="68" y="288" class="legend">橋</text><line x1="16" y1="330" x2="58" y2="330" stroke="#df9c48" stroke-width="18" stroke-dasharray="8 6"/><text x="68" y="336" class="legend">階段</text><rect x="16" y="362" width="42" height="25" rx="3" class="building"/><text x="68" y="381" class="legend">建物／壁</text><text x="16" y="416" class="note">主経路 約330m</text></g>
+<style>.title{fill:#f3cc8d;font:700 24px serif}.subtitle{fill:#b9a27c;font:15px sans-serif}.road{stroke-linecap:butt;opacity:.98}.center{stroke:#e0b26b;stroke-width:2;opacity:.38}.center.dead-end{stroke:#7c6755;stroke-dasharray:4 5}.building{fill:#38251d;stroke:#785036;stroke-width:2}.level-2,.level-3{fill:#432b21}.marker{fill:#fff0c5;font:700 17px sans-serif}.small{fill:#e8d0a4;font:13px sans-serif}.legend-title{fill:#efcd92;font:700 21px serif}.legend{fill:#ead9bd;font:14px sans-serif}.note{fill:#bba27d;font:13px sans-serif}</style></svg>

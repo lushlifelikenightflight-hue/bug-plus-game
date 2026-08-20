@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#b9c8d2" />
+    <title>月影温泉郷 — 黒影夜行</title>
+    <script type="module" crossorigin src="./assets/index-CtS7RA5H.js"></script>
+    <script src="./bug-plus-bridge.js" defer></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B9MwozW9.css">
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud">
+      <div class="place">大正十五年・月影温泉郷<br /><strong>黒影夜行</strong></div>
+      <div id="start-status"><small>開始門までは安全地帯</small><strong>門をくぐると START</strong></div>
+      <button id="audio-toggle" type="button" aria-pressed="false">音声 OFF</button>
+      <div class="hint desktop-hint"><b>夜明けまで、生きて辿り着け</b><br />WASD / 矢印キー 移動　左クリック 射撃　右クリック / E ガード　Shift ダッシュ</div>
+      <div class="hint mobile-hint"><b>夜明けまで、生きて辿り着け</b><br />左スティック 移動　右側スワイプ 視点　FIRE 射撃　GUARD 防御</div>
+      <div id="combat-hud">
+        <div id="objective-text">脱出地点まで 160m</div>
+        <div class="health-row"><span>生命</span><div class="health-track"><i id="health-fill"></i></div><b id="health-text">100</b></div>
+        <div class="guard-row"><span>防御</span><div class="guard-track"><i id="guard-fill"></i></div><b id="guard-text">100</b></div>
+        <div id="enemy-count">撃破 0</div>
+      </div>
+      <div id="threat-radar" aria-label="攻撃している敵の方位"><span>交戦方位</span><i class="radar-player"></i></div>
+      <div class="reticle" aria-hidden="true"></div>
+      <div id="hitmarker" aria-hidden="true"></div>
+      <div id="damage-vignette" aria-hidden="true"></div>
+      <div id="guard-vignette" aria-hidden="true"></div>
+    </div>
+    <div id="enemy-subtitles" aria-live="polite" aria-atomic="false"></div>
+    <div id="intro-sequence" role="dialog" aria-modal="true" aria-labelledby="intro-heading">
+      <div class="intro-panel">
+        <small>月影温泉郷・午前零時</small>
+        <h1 id="intro-heading">黒影夜行</h1>
+        <div id="intro-story"><p id="intro-copy"></p></div>
+        <div id="tutorial-grid" hidden>
+          <article><svg viewBox="0 0 80 58" aria-hidden="true"><path d="M9 31h39l8-8h13v12H56l-8-5v14H18zM26 44l-5 10h-9l6-12"/><circle cx="66" cy="18" r="5"/><path d="M61 18H48"/></svg><b>1. 撃つ</b><p>襲ってきた影はマシンガンで倒して進もう</p></article>
+          <article><svg viewBox="0 0 80 58" aria-hidden="true"><path d="M40 5 66 15v18c0 12-10 19-26 23C24 52 14 45 14 33V15z"/><path d="m28 31 8 8 17-19" class="cut"/></svg><b>2. 守る</b><p>ガードしながら進もう</p></article>
+          <article><svg viewBox="0 0 80 58" aria-hidden="true"><circle cx="48" cy="10" r="7"/><path d="m43 18-12 14 12 5 9 17M43 24l16 9M33 33 17 51M11 16h20M5 25h19"/></svg><b>3. 走る</b><p>ダッシュでゴールまで駆け抜けよう</p></article>
+          <article><svg viewBox="0 0 80 58" aria-hidden="true"><path d="M15 55V16h50v39M8 16h64M20 8h40v8M31 55V29h18v26"/><path d="M6 50h20" class="cut"/></svg><b>4. 始める</b><p>スタート地点を過ぎるとゲーム開始</p></article>
+        </div>
+        <div class="intro-actions"><span id="intro-progress">1 / 4</span><button id="intro-next" type="button">次へ</button></div>
+      </div>
+    </div>
+    <div id="game-state" role="dialog" aria-modal="true" aria-live="assertive" hidden>
+      <div class="state-panel"><small>月影温泉郷</small><h1 id="state-title">闇に呑まれた</h1><p id="state-copy"></p><button id="restart-button" type="button">もう一度進む</button></div>
+    </div>
+    <div id="mobile-controls" aria-label="タッチ操作">
+      <div id="move-zone" aria-label="移動スティック"><div id="joystick-knob"></div></div>
+      <div id="look-zone" aria-label="視点操作エリア"><span>視点</span></div>
+      <button id="dash-button" type="button">DASH</button>
+      <button id="guard-button" type="button">GUARD</button>
+      <button id="fire-button" type="button">FIRE</button>
+    </div>
+  </body>
+</html>

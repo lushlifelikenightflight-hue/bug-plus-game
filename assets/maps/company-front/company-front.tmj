@@ -302,14 +302,29 @@
       "draworder": "topdown",
       "id": 5,
       "name": "Interactions",
-      "objects": [],
+      "objects": [
+        {
+          "height": 90,
+          "id": 15,
+          "name": "tsukikageGate",
+          "properties": [
+            { "name": "displayName", "type": "string", "value": "月影温泉街ゲート" },
+            { "name": "promptX", "type": "float", "value": 140 },
+            { "name": "promptY", "type": "float", "value": 605 }
+          ],
+          "type": "interaction",
+          "width": 140,
+          "x": 70,
+          "y": 620
+        }
+      ],
       "opacity": 1,
       "type": "objectgroup",
       "visible": true
     }
   ],
   "nextlayerid": 6,
-  "nextobjectid": 15,
+  "nextobjectid": 16,
   "orientation": "orthogonal",
   "renderorder": "right-down",
   "tiledversion": "1.12.2",

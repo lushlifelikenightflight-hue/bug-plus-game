@@ -373,6 +373,7 @@ export class Game {
       perfect: true,
       roundLosses: 0,
       finalStats: null,
+      eyesBonusPage: 2,
       stageBonusAwarded: false,
       inputHistory: [],
       roundCarry: { meter: 0, specialGauge: 0, skillGauge: 0, ammo: 0, copyCharges: 0 },
@@ -673,7 +674,8 @@ export class Game {
     } else if (this.state.screen === SCREEN.controllerSettings) {
       this.tickControllerSettings(input);
     } else if (this.state.screen === SCREEN.score) {
-      if (input.cancel || input.confirm) this.setScreen(SCREEN.menu);
+      if (input.confirm && this.state.eyesBonusPage < 2) { this.state.eyesBonusPage += 1; this.renderPanel(); }
+      else if (this.state.eyesBonusPage >= 2 && (input.cancel || input.confirm)) this.setScreen(SCREEN.menu);
     } else if (this.state.screen === SCREEN.stageIntro) {
       // Stage dialogue is shown for exactly four seconds at the fixed 60 Hz
       // simulation rate. Confirm remains an explicit skip affordance.
@@ -2814,6 +2816,11 @@ export class Game {
       durationMs: Math.round(this.frame * FRAME),
     };
     this.state.finalStats = finalStats;
+    const eyesBonus = this.state.mode === "arcade" && this.state.difficulty === "hard" && this.state.stage >= 5;
+    this.state.eyesBonusPage = eyesBonus ? 0 : 2;
+    if (eyesBonus && typeof window !== "undefined" && window.parent !== window) {
+      window.parent.postMessage({ type: "bug-plus:fighter-hard-clear", stage: this.state.stage, difficulty: this.state.difficulty }, "*");
+    }
     this.save = appendHighScore(this.save, {
       score: this.state.score,
       rank,
@@ -3295,6 +3302,17 @@ export class Game {
         stats.textContent = `${this.state.finalStats.character} / ${this.state.finalStats.difficulty.toUpperCase()} / COLOR ${this.state.finalStats.color} · TIME ${formatDuration(this.state.finalStats.durationMs)} · MAX COMBO ${this.state.finalStats.maxCombo} · JUST ${this.state.finalStats.justGuards} · SPECIAL ${this.state.finalStats.specialHits} · CONTINUES ${this.state.finalStats.continues}`;
         this.panel.appendChild(stats);
       }
+      if (this.state.eyesBonusPage < 2) {
+        const bonus = document.createElement("section"); bonus.className = "eyes-world-bonus";
+        if (this.state.eyesBonusPage === 0) {
+          bonus.innerHTML = '<strong>ゲームクリアおめでとう！</strong><p>特典アプリ「EYES OF THE WORLD -世界を視る眼-」がインストールされました！</p>';
+          bonus.appendChild(button("次へ", () => { this.state.eyesBonusPage = 1; this.renderPanel(); }, true));
+        } else {
+          bonus.innerHTML = '<strong>業務端末アプリから起動してみてね！</strong><p>いままで視えなかったものが視えるようになるよ！</p>';
+          bonus.appendChild(button("SCOREへ", () => { this.state.eyesBonusPage = 2; this.renderPanel(); }, true));
+        }
+        this.panel.appendChild(bonus); return;
+      }
       const list = document.createElement("ol"); list.className = "score-list"; for (const entry of this.save.highScores) { const li = document.createElement("li"); li.textContent = `${entry.score}  ${entry.rank}  ${entry.character || "—"}  ${entry.difficulty}`; list.appendChild(li); } this.panel.appendChild(list); button("BACK", () => this.setScreen(SCREEN.menu));
     }
   }
@@ -3314,7 +3332,7 @@ export class Game {
     if (screen === SCREEN.colorSelect) return `${screen}:${this.state.selectedId}:${this.state.color}`;
     if (screen === SCREEN.stageIntro || screen === SCREEN.roundIntro) return `${screen}:${this.state.stage}:${this.state.round}:${this.state.mode}`;
     if (screen === SCREEN.pause) return `${screen}:${this.state.pauseIndex}:${this.state.mode}`;
-    if (screen === SCREEN.roundResult || screen === SCREEN.stageResult || screen === SCREEN.continue || screen === SCREEN.gameOver || screen === SCREEN.ending || screen === SCREEN.score) return `${screen}:${this.state.result}:${this.state.stage}:${this.state.score}:${this.state.continueUsed}:${Boolean(this.state.finalStats)}`;
+    if (screen === SCREEN.roundResult || screen === SCREEN.stageResult || screen === SCREEN.continue || screen === SCREEN.gameOver || screen === SCREEN.ending || screen === SCREEN.score) return `${screen}:${this.state.result}:${this.state.stage}:${this.state.score}:${this.state.continueUsed}:${Boolean(this.state.finalStats)}:${this.state.eyesBonusPage}`;
     return screen;
   }
 
