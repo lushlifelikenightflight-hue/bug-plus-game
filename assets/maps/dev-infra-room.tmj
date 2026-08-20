@@ -474,6 +474,27 @@
           "width": 120,
           "x": 1458,
           "y": 297
+        },
+        {
+          "height": 180,
+          "id": 37,
+          "name": "devWhiteboard",
+          "properties": [
+            {
+              "name": "promptX",
+              "type": "float",
+              "value": 695
+            },
+            {
+              "name": "promptY",
+              "type": "float",
+              "value": 120
+            }
+          ],
+          "type": "interaction",
+          "width": 310,
+          "x": 540,
+          "y": 130
         }
       ],
       "opacity": 1,
@@ -482,7 +503,7 @@
     }
   ],
   "nextlayerid": 6,
-  "nextobjectid": 37,
+  "nextobjectid": 38,
   "orientation": "orthogonal",
   "renderorder": "right-down",
   "tiledversion": "1.12.2",

@@ -171,6 +171,27 @@
           "width": 221,
           "x": 189,
           "y": 1084
+        },
+        {
+          "height": 72,
+          "id": 19,
+          "name": "returnToReception",
+          "properties": [
+            {
+              "name": "targetScene",
+              "type": "string",
+              "value": "ReceptionScene"
+            },
+            {
+              "name": "targetSpawn",
+              "type": "string",
+              "value": "elevatorReturn"
+            }
+          ],
+          "type": "transition",
+          "width": 51,
+          "x": 981,
+          "y": 268
         }
       ],
       "opacity": 1,
@@ -260,7 +281,7 @@
     }
   ],
   "nextlayerid": 6,
-  "nextobjectid": 19,
+  "nextobjectid": 20,
   "orientation": "orthogonal",
   "renderorder": "right-down",
   "tiledversion": "1.12.2",
