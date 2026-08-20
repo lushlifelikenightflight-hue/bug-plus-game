@@ -189,6 +189,10 @@ const SKILL_ENTITY_LIMIT = 96;
 const HITSTOP_ON_HIT_FRAMES = 2;
 const ACTION_LOCK_STATES = new Set(["attacking", "hitstun", "blockstun", "knockback", "knockdown", "knockdownLanding", "downed", "groundHit", "throwing", "skillStartup", "skillCharging", "skillActive", "skillRecovery"]);
 const DIFFICULTY_IDS = Object.keys(DIFFICULTIES);
+export const HARD_CLEAR_REWARD_STORAGE_KEY = "bug-plus:fighter-hard-clear:v1";
+export function qualifiesForEyesBonus(state) {
+  return state?.mode === "arcade" && state?.difficulty === "hard" && Number(state?.stage) >= STAGES.length;
+}
 const MOVE_KEYS = Object.freeze({ light: "light_attack_neutral", strong: "strong_attack_neutral" });
 const SE_SOURCES = Object.freeze({
   light: "assets/audio/se/light-attack.wav",
@@ -2800,6 +2804,16 @@ export class Game {
     this.startStage();
   }
 
+  publishEyesReward() {
+    const message = { type: "bug-plus:fighter-hard-clear", stage: this.state.stage, difficulty: this.state.difficulty, awardedAt: Date.now() };
+    try { window.localStorage?.setItem(HARD_CLEAR_REWARD_STORAGE_KEY, JSON.stringify(message)); } catch { /* Parent message remains available. */ }
+    if (typeof window !== "undefined" && window.parent !== window) {
+      window.parent.postMessage(message, "*");
+      try { window.parent.dispatchEvent(new CustomEvent("bug-plus:fighter-hard-clear", { detail: message })); } catch { /* postMessage remains available. */ }
+      window.setTimeout(() => window.parent.postMessage(message, "*"), 120);
+    }
+  }
+
   finishEnding() {
     const rank = rankForScore(this.state.score, { perfect: this.state.perfect, difficulty: this.state.difficulty });
     const finalStats = this.state.finalStats || {
@@ -2816,7 +2830,7 @@ export class Game {
       durationMs: Math.round(this.frame * FRAME),
     };
     this.state.finalStats = finalStats;
-    const eyesBonus = this.state.mode === "arcade" && this.state.difficulty === "hard" && this.state.stage >= 5;
+    const eyesBonus = qualifiesForEyesBonus(this.state);
     this.state.eyesBonusPage = eyesBonus ? 0 : 2;
     this.save = appendHighScore(this.save, {
       score: this.state.score,
@@ -2827,11 +2841,7 @@ export class Game {
       durationMs: finalStats.durationMs,
     });
     this.setScreen(SCREEN.score);
-    if (eyesBonus && typeof window !== "undefined" && window.parent !== window) {
-      const message = { type: "bug-plus:fighter-hard-clear", stage: this.state.stage, difficulty: this.state.difficulty };
-      window.parent.postMessage(message, "*");
-      window.setTimeout(() => window.parent.postMessage(message, "*"), 120);
-    }
+    if (eyesBonus) this.publishEyesReward();
   }
 
   returnTitle() {
