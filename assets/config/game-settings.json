@@ -1,7 +1,7 @@
 {
   "version": 1,
   "dayDurationMinutes": 15,
-  "userScreenLock": "day1",
+  "roomUnlockMode": "progressive",
   "continuationScoreThreshold": 100000,
   "slackPostIntervalMinutes": 30
 }
